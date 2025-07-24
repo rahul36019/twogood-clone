@@ -18,6 +18,24 @@ body {
 min-height: 100%;
 }
 
+
+
+/*
+
+
+----------------
+
+page 1 styling
+------------------
+
+
+*/
+
+
+
+
+
+
 .page1{
     min-height: 100vh;
     position: relative;
@@ -64,3 +82,46 @@ min-height: 100%;
     opacity: 0;
     scale: 0;
 }
+
+
+/* 
+
+
+-------------
+page 2 styling
+
+-------------
+
+*/
+
+
+.page2{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+    position: relative;
+    display: flex ;
+    text-align: center;
+    justify-content: space-between;
+    padding: 3vw 3vw;
+    
+
+}
+
+.elem{
+    height: 98%;
+    width: 30%;
+    background-color: red;
+   
+    
+    
+}
+
+.elem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    
+}
+
