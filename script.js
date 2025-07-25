@@ -39,5 +39,10 @@ function loadingAnimation(){
 }
 
 
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('.main'),
+    smooth: true
+});
+
 loadingAnimation();
 videoAnimation();
