@@ -1,21 +1,22 @@
-*{
-margin: 0;
+* {
+    margin: 0;
 
-padding: 0;
+    padding: 0;
 
-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-*::selection{
+*::selection {
     color: wheat;
     background-color: black;
 }
 
 html {
-height: 100%;
+    height: 100%;
 }
+
 body {
-min-height: 100%;
+    min-height: 100%;
 }
 
 
@@ -36,23 +37,23 @@ page 1 styling
 
 
 
-.page1{
+.page1 {
     min-height: 100vh;
     position: relative;
     width: 100%;
-    padding:  0 3vw;
+    padding: 0 3vw;
     padding-top: 9vw;
 }
 
-#heading{
+#heading {
     font-size: 14.5vw;
     font-family: futura;
-    line-height: 15vw ;
+    line-height: 15vw;
     text-transform: uppercase;
 
 }
 
-.video_container{
+.video_container {
     height: 100vh;
     width: 100%;
     background-color: gray;
@@ -60,7 +61,7 @@ page 1 styling
     position: relative;
 }
 
-.video_container video{
+.video_container video {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -72,8 +73,10 @@ page 1 styling
     color: white;
     width: 8vw;
     height: 8vw;
-    line-height: 8vw; /* centers the text vertically */
-    text-align: center; /* centers the text horizontally */
+    line-height: 8vw;
+    /* centers the text vertically */
+    text-align: center;
+    /* centers the text horizontally */
     border: solid 2px white;
     border-radius: 50%;
     font-family: futura;
@@ -95,33 +98,107 @@ page 2 styling
 */
 
 
-.page2{
+.page2 {
     width: 100%;
     height: 100vh;
     /* background-color: aqua; */
     position: relative;
-    display: flex ;
+    display: flex;
     text-align: center;
     justify-content: space-between;
     padding: 3vw 3vw;
-    
+
 
 }
 
-.elem{
+.elem {
     height: 98%;
     width: 30%;
     /* background-color: red; */
-   
-    
-    
+
+
+
 }
 
-.elem img{
+.elem img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 
-    
+
 }
 
+
+
+/* responsive code  */
+
+@media (max-width:600px) {
+
+    .page1 {
+        min-height: 70vh;
+        position: relative;
+        width: 100%;
+        padding: 0 3vw;
+        padding-top: 9vw;
+    }
+
+    #heading {
+        font-size: 15.5vw;
+        font-family: futura;
+        line-height: 15vw;
+        text-transform: uppercase;
+    }
+
+    .video_container {
+        height: 50vh;
+        width: 100%;
+        /* background-color: gray; */
+        margin-top: 1vw;
+        position: relative;
+    }
+
+    .play {
+    background-color: black;
+    font-size: 1.5vw;
+    color: white;
+    width: 8vw;
+    height: 8vw;
+    line-height: 8vw;
+    /* centers the text vertically */
+    text-align: center;
+    /* centers the text horizontally */
+    border: solid 2px white;
+    border-radius: 50%;
+    font-family: futura;
+    text-transform: uppercase;
+    position: fixed;
+    opacity: 0;
+    scale: 0;
+}
+
+    
+.page2 {
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: aqua; */
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 3vw 3vw;
+    flex-direction: column;
+
+
+}
+    
+.elem {
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+
+
+
+}
+
+
+}
