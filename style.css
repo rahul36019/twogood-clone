@@ -175,30 +175,31 @@ page 2 styling
     opacity: 0;
     scale: 0;
 }
-
-    
 .page2 {
     width: 100%;
-    min-height: 100vh;
-    /* background-color: aqua; */
+    /* min-height instead of fixed */
+    min-height: auto;
     position: relative;
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: space-between;
-    padding: 3vw 3vw;
-    flex-direction: column;
-
-
+    padding: 3vw;
+    gap: 5vw; /* optional spacing between images */
 }
-    
+
 .elem {
-    height: 100vh;
     width: 100%;
-    /* background-color: red; */
-
-
-
+    /* allow height to adapt to image or set a fixed small value */
+    height: auto;
 }
+
+.elem img {
+    width: 100%;
+    height: auto; /* maintain image aspect ratio */
+    object-fit: cover;
+}
+
 
 
 }
